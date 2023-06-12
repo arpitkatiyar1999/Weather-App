@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.weather_details.WeatherDetailsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/day_sky" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/your_location_tv"
+        style="@style/PoppinsRegular16spLightWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="8dp"
+        android:text="@string/your_location_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/location_tv"
+        style="@style/PoppinsSemiBold24spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/your_location_tv"
+        tools:text="Gurugram, India" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/current_temp_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_tv"
+        tools:background="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/current_condition_tv"
+        style="@style/PoppinsSemiBold24spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_12_bg"
+        android:backgroundTint="#4DFFFFFF"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_temp_img"
+        tools:text="Moonlight" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/current_temperature_tv"
+        style="@style/PoppinsSemiBold72spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/current_temperature_unit_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_condition_tv"
+        tools:text="9" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/current_temperature_unit_tv"
+        style="@style/PoppinsSemiBold24spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/current_temperature_tv"
+        app:layout_constraintTop_toBottomOf="@id/current_condition_tv"
+        tools:text="C" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/wind_speed_tv"
+        style="@style/PoppinsSemiBold16spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_wind"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/cloud_tv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_temperature_tv"
+        tools:text="5km/hr NSE" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cloud_tv"
+        style="@style/PoppinsSemiBold16spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_cloud"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/humidity_tv"
+        app:layout_constraintStart_toEndOf="@+id/wind_speed_tv"
+        app:layout_constraintTop_toBottomOf="@id/current_temperature_tv"
+        tools:text="50%" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/humidity_tv"
+        style="@style/PoppinsSemiBold16spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_humidity"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cloud_tv"
+        app:layout_constraintTop_toBottomOf="@id/current_temperature_tv"
+        tools:text="5mbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/temperature_tv"
+        style="@style/PoppinsSemiBold16spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/humidity_tv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/temperature_unit_tv"
+        style="@style/PoppinsRegular16spLightWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_next"
+        android:drawablePadding="8dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/humidity_tv"
+        tools:text="Celcius" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/wind_speed_txt_tv"
+        style="@style/PoppinsSemiBold16spWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/wind_speed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperature_tv" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/wind_speed_txt_unit_tv"
+        style="@style/PoppinsRegular16spLightWhiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_next"
+        android:drawablePadding="8dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperature_tv"
+        tools:text="Celcius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
