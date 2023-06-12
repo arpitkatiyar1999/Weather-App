@@ -9,7 +9,9 @@ An app to get the Weather details of current location.
 - Easyily change the unit of temperature and wind spped
 - Get accurate details of current weather conditions
 
+## App Apk
 
+[Download APK](https://github.com/arpitkatiyar1999/Weather-App/blob/master/app-debug.apk)
 
 ## Screenshots
 
