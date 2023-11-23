@@ -9,16 +9,12 @@ An app to get the Weather details of current location.
 - Easyily change the unit of temperature and wind spped
 - Get accurate details of current weather conditions
 
-## App Apk
-
-[Download APK](https://github.com/arpitkatiyar1999/Weather-App/blob/master/app-debug.apk)
 
 ## Screenshots
 
-<img src="https://github.com/arpitkatiyar1999/Weather-App/assets/60139160/d1d45148-c952-49f1-96a1-14b9bcbe9d46.jpg" alt="Splash Screen" width="200" height="400"/>
-<img src="https://github.com/arpitkatiyar1999/Weather-App/assets/60139160/b2e1fb18-d529-47f2-ba90-c71b3f15d0ff.jpg" alt="Error Screen" width="200" height="400"/>
-<img src="https://github.com/arpitkatiyar1999/Weather-App/assets/60139160/9407c2b7-4d01-4d37-9869-3886dc0d2ca8" alt="Night Screen" width="200" height="400"/>
-<img src="https://github.com/arpitkatiyar1999/Weather-App/assets/60139160/5a2f550e-bfdb-4f05-8524-7c9269fef0ed" alt="Dat Screen" width="200" height="400"/>
+<img src="https://github.com/arpitkatiyar1999/Daily-Info/assets/60139160/e9db2426-9d2d-41f7-8990-b9d5aee9d38d.jpg" alt="Home Screen" width="200" height="400"/>
+<img src="https://github.com/arpitkatiyar1999/Daily-Info/assets/60139160/21ad08b5-56fa-49cc-bce0-4bd37d0a9ebf.jpg" alt="Home Screen With Filter Options" width="200" height="400"/>
+
 
 
 ## Tech Stack Used
